@@ -1,0 +1,9 @@
+﻿<Window x:Class="TableTopArena.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="425" Width="525">
+    <Grid>
+        <Button Content="Play Game" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="213,198,0,0" Click="StartGameWindowClick"/>
+        <Label Content="Game of Cookies" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95,50,0,0" FontSize="48" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri"/>
+    </Grid>
+</Window>
