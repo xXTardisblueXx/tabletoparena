@@ -6,20 +6,33 @@
     <Grid>
         <ItemsControl ItemsSource="{Binding Tiles}">
             <ItemsControl.Resources>
-                <DataTemplate DataType="{x:Type local:Tile}">
+                <DataTemplate DataType="{x:Type local:MapTile}">
                     <Grid Background="{Binding Background}">
                         <Border BorderBrush="Black" BorderThickness="1">
-                        <TextBlock Text="{Binding Data}"></TextBlock>
+                        <Button Content="{Binding Data}" Click="MapActionClick"></Button>
                         </Border>
                     </Grid>
                 </DataTemplate>
             </ItemsControl.Resources>
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <DataGrid Rows="{Binding Rows}" Columns="{Binding Columns}"></DataGrid>
+                    <UniformGrid Rows="{Binding Rows}" Columns="{Binding Columns}"></UniformGrid>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>
+        
+        <!--<DataGrid ItemsSource="{Binding Tiles}">
+            <ItemsControl.Resources>
+                <DataTemplate DataType="{x:Type local:Tile}">
+                    <Grid Background="{Binding Background}">
+                        <Border BorderBrush="Black" BorderThickness="1">
+                            <TextBlock Text="{Binding Data}"></TextBlock>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.Resources>
+        </DataGrid>-->
+
 
 
     </Grid>

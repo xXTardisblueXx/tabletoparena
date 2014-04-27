@@ -24,9 +24,14 @@ namespace TableTopArena.Windows
         {
             InitializeComponent();
 
-            Map map = new Map(25, 25);
+            Map map = new Map(10, 10);
 
             this.DataContext = map;
+        }
+
+        private void MapActionClick(object sender, RoutedEventArgs e)
+        {
+
         }
 
     }
