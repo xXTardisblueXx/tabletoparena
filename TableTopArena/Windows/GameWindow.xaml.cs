@@ -41,20 +41,23 @@ namespace TableTopArena.Windows
                 MapDataGrid.RowDefinitions.Add(new RowDefinition());
             }
 
-            foreach (MapTile tile in _Map.Tiles)
+            foreach (KeyValuePair<MapPoint, MapTile> keyValue in _Map.Tiles)
             {
-                GridButton button = new GridButton()
-                {
-                    Tile = tile
-                };
+                MapPoint position = keyValue.Key;
+                MapTile tile = keyValue.Value;
+
+
+                GridButton button = new GridButton(position);
           
                 button.Click += MapClick;
 
-                Grid.SetRow(button, tile.Position.Row);
-                Grid.SetColumn(button, tile.Position.Column);
+                Grid.SetRow(button, position.Row);
+                Grid.SetColumn(button, position.Column);
                 MapDataGrid.Children.Add(button);
             }
         }
+
+
         void MapClick(object sender, RoutedEventArgs e)
         {
             GridButton button = sender as GridButton;

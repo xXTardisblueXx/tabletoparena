@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,86 +11,38 @@ namespace TableTopArena.Sources
 {
     public class Map
     {
+        public int RowCount { get; private set; }
+        public int ColumnCount { get; private set; }
 
-        private int _rows;
-        private int _columns;
-        private List<MapRow> _rowObjects;
-        private List<MapTile> _tiles;
-
-        public int RowCount
-        {
-            set
-            {
-                _rows = value;
-            }
-            get
-            {
-                return _rows;
-            }
-        }
-        public int ColumnCount
-        {
-            get
-            {
-                return _columns;
-            }
-            set
-            {
-                _columns = value;
-            }
-        }
-        public virtual List<MapRow> Rows
-        {
-            get
-            {
-                if (_rowObjects == null)
-                {
-                    _rowObjects = new List<MapRow>();
-                }
-                return _rowObjects;
-            }
-            set
-            {
-                _rowObjects = value;
-            }
-        }
-        public virtual List<MapTile> Tiles
-        {
-            get
-            {
-                if (_tiles == null) _tiles = new List<MapTile>();
-                return _tiles;
-            }
-            set { _tiles = value; }
-        }
+        public Dictionary<MapPoint, MapTile> Tiles { get; set; }
+        
         public Map(int rows, int columns)
         {
             RowCount = rows;
             ColumnCount = columns;
-
-            Rows = new List<MapRow>();
-            Tiles = new List<MapTile>();
+            Tiles = new Dictionary<MapPoint, MapTile>();
 
             for (int i = 0; i < rows; i++)
             {
-                MapRow row = new MapRow(columns, i);
-                Tiles.AddRange(row.Tiles);
-                Rows.Add(row);
+                for (int o = 0; o < columns; o++)
+                {
+                    MapPoint position = new MapPoint(i, o);
+                    Tiles.Add(position, new MapTile(position));
+                }                
             }
         }
 
         public void EditTile(GridButton button, MapTileType newType)
         {
-            MapTile mapTile = button.Tile;
-            int index = Tiles.IndexOf(mapTile);
+            MapTile mapTile = GetTile(button.Position);
             mapTile.TileType = newType;
-            Tiles[index] = mapTile;
-            RefreshType(button);
+            Tiles[mapTile.Position] = mapTile;
+            SetButtonContentAccordingToType(button, mapTile);
         }
 
-        private void RefreshType(GridButton button)
+        private void SetButtonContentAccordingToType(GridButton button, MapTile tile)
         {
-            switch (button.Tile.TileType)
+            switch (tile.TileType)
             {
                 case MapTileType.Empty:
                     button.Content = String.Empty;
@@ -108,46 +61,34 @@ namespace TableTopArena.Sources
 
         private MapTile GetTile(MapPoint Position)
         {
-            return Tiles.Find(t => t.Position == Position);
+            MapTile tile;
+            Tiles.TryGetValue(Position, out tile);
+            return tile;
         }
-    }
-
-
-    public class MapRow
-    {
-        public MapRow(int columns, int rowNumber)
-        {
-            Tiles = new List<MapTile>();
-            Random random = new Random();
-            for (int i = 0; i < columns; i++)
-            {
-                Tiles.Add(new MapTile()
-                {
-                    Position = new MapPoint() {
-                        Row = rowNumber,
-                        Column = i
-                    },
-                    Background = new SolidColorBrush(Color.FromArgb(255, (byte)random.Next(256), (byte)random.Next(256), (byte)random.Next(256)))
-                });
-            }
-        }
-        public List<MapTile> Tiles { get; set; }
-
-
-
     }
 
     public class MapTile
     {
+        public MapTile(int row, int column)
+        {
+            Position = new MapPoint(row, column);
+        }
+        public MapTile(MapPoint position)
+        {
+            Position = position;
+        }
         public MapPoint Position { get; set; }
-        public SolidColorBrush Background { get; set; }
-
         public MapTileType TileType { get; set; }
 
     }
 
     public class MapPoint
     {
+        public MapPoint(int row, int column)
+        {
+            Row = row;
+            Column = column;
+        }
         public int Row { get; set; }
         public int Column { get; set; }
     }
@@ -163,7 +104,11 @@ namespace TableTopArena.Sources
 
     public class GridButton : Button
     {
-        public MapTile Tile { get; set; }
+        public GridButton(MapPoint position)
+        {
+            Position = position;
+        }
+        public MapPoint Position { get; private set; }
     }
 
     
