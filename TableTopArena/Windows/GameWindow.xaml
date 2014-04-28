@@ -4,22 +4,8 @@
         xmlns:local="clr-namespace:TableTopArena.Sources"
         Title="GameWindow" Height="525" Width="525">
     <Grid>
-        <ItemsControl ItemsSource="{Binding Tiles}">
-            <ItemsControl.Resources>
-                <DataTemplate DataType="{x:Type local:MapTile}">
-                    <Grid Background="{Binding Background}">
-                        <Border BorderBrush="Black" BorderThickness="1">
-                        <Button Content="{Binding Data}" Click="MapActionClick"></Button>
-                        </Border>
-                    </Grid>
-                </DataTemplate>
-            </ItemsControl.Resources>
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <UniformGrid Rows="{Binding Rows}" Columns="{Binding Columns}"></UniformGrid>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-        </ItemsControl>
+        <Grid Name="MapDataGrid">
+        </Grid>
         
         <!--<DataGrid ItemsSource="{Binding Tiles}">
             <ItemsControl.Resources>

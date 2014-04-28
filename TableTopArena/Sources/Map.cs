@@ -78,31 +78,37 @@ namespace TableTopArena.Sources
             }
         }
 
-        public void AddGameObject(int row, int column, GameObject gameObject)
+        public void EditTile(GridButton button, MapTileType newType)
         {
-            GetTile(row, column).Object = gameObject;
+            MapTile mapTile = button.Tile;
+            int index = Tiles.IndexOf(mapTile);
+            mapTile.TileType = newType;
+            Tiles[index] = mapTile;
+            RefreshType(button);
         }
 
-        public void AddGameObject(int row, int column, GameCharacter character)
+        private void RefreshType(GridButton button)
         {
-            GetTile(row, column).Character = character;
-        }
-        public void AddGameCharacter(int row, int column, GameCharacter gameCharacter)
-        {
-            GetTile(row, column).Character = gameCharacter;
+            switch (button.Tile.TileType)
+            {
+                case MapTileType.Empty:
+                    button.Content = String.Empty;
+                    break;
+                case MapTileType.Object:
+                    button.Content = "O";
+                    break;
+                case MapTileType.Character:
+                    button.Content = "C";
+                    break;
+                case MapTileType.Player:
+                    button.Content = "P";
+                    break;
+            }      
         }
 
-        public void MoveGameObject(int fromRow, int fromColumn, int toRow, int toColumn)
+        private MapTile GetTile(MapPoint Position)
         {
-            MapTile fromTile = GetTile(fromRow, fromColumn);
-            MapTile toTile = GetTile(toRow, toColumn);
-            toTile.Object = fromTile.Object;
-            fromTile.Object = null;
-        }
-
-        private MapTile GetTile(int row, int column)
-        {
-            return Tiles.Find(t => t.RowNumber == row && t.ColumnNumber == column);
+            return Tiles.Find(t => t.Position == Position);
         }
     }
 
@@ -117,8 +123,10 @@ namespace TableTopArena.Sources
             {
                 Tiles.Add(new MapTile()
                 {
-                    RowNumber = rowNumber,
-                    ColumnNumber = i,
+                    Position = new MapPoint() {
+                        Row = rowNumber,
+                        Column = i
+                    },
                     Background = new SolidColorBrush(Color.FromArgb(255, (byte)random.Next(256), (byte)random.Next(256), (byte)random.Next(256)))
                 });
             }
@@ -131,14 +139,33 @@ namespace TableTopArena.Sources
 
     public class MapTile
     {
-        public int RowNumber { get; set; }
-        public int ColumnNumber { get; set; }
+        public MapPoint Position { get; set; }
         public SolidColorBrush Background { get; set; }
-        public GameObject Object { get; set; }
-        public GameCharacter Character { get; set; }
-        public GamePlayer Player { get; set; }
+
+        public MapTileType TileType { get; set; }
 
     }
 
+    public class MapPoint
+    {
+        public int Row { get; set; }
+        public int Column { get; set; }
+    }
+
+
+    public enum MapTileType
+    {
+        Empty = 0,
+        Object = 1,
+        Character = 2,
+        Player = 3
+    }
+
+    public class GridButton : Button
+    {
+        public MapTile Tile { get; set; }
+    }
+
+    
 
 }
