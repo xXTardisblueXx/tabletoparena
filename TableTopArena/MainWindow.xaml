@@ -5,5 +5,6 @@
     <Grid>
         <Button Content="Play Game" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="213,198,0,0" Click="StartGameWindowClick"/>
         <Label Content="Game of Cookies" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95,50,0,0" FontSize="48" FontWeight="Bold" FontStyle="Italic" FontFamily="Calibri"/>
+        <Button Content="Edit Map" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="213,243,0,0" Click="StartMapEditorClick"/>
     </Grid>
 </Window>

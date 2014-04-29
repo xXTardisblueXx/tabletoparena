@@ -5,20 +5,7 @@
         Title="GameWindow" Height="525" Width="525">
     <Grid>
         <Grid Name="MapDataGrid">
-        </Grid>
-        
-        <!--<DataGrid ItemsSource="{Binding Tiles}">
-            <ItemsControl.Resources>
-                <DataTemplate DataType="{x:Type local:Tile}">
-                    <Grid Background="{Binding Background}">
-                        <Border BorderBrush="Black" BorderThickness="1">
-                            <TextBlock Text="{Binding Data}"></TextBlock>
-                        </Border>
-                    </Grid>
-                </DataTemplate>
-            </ItemsControl.Resources>
-        </DataGrid>-->
-
+        </Grid>     
 
 
     </Grid>

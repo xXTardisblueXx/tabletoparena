@@ -31,5 +31,11 @@ namespace TableTopArena
             GameWindow startgame = new GameWindow();
             startgame.Show();
         }
+
+        private void StartMapEditorClick(object sender, RoutedEventArgs e)
+        {
+            MapEditorWindow mapEditor = new MapEditorWindow();
+            mapEditor.Show();
+        }
     }
 }

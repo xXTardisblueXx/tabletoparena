@@ -20,7 +20,6 @@ namespace TableTopArena.Windows
     /// </summary>
     public partial class GameWindow : Window
     {
-        private GridButton _ClickFrom { get; set; }
         private Map _Map { get; set; }
 
         public GameWindow()
@@ -32,47 +31,11 @@ namespace TableTopArena.Windows
         
             _Map = new Map(mapWidth, mapHeight);
 
-            for (var i = 1; i < mapWidth + 1; i++)
-            {
-                MapDataGrid.ColumnDefinitions.Add(new ColumnDefinition());
-            }
-            for (var o = 1; o < mapHeight + 1; o++)
-            {
-                MapDataGrid.RowDefinitions.Add(new RowDefinition());
-            }
-
-            foreach (KeyValuePair<MapPoint, MapTile> keyValue in _Map.Tiles)
-            {
-                MapPoint position = keyValue.Key;
-                MapTile tile = keyValue.Value;
-
-
-                GridButton button = new GridButton(position);
-          
-                button.Click += MapClick;
-
-                Grid.SetRow(button, position.Row);
-                Grid.SetColumn(button, position.Column);
-                MapDataGrid.Children.Add(button);
-            }
+            MapDataGrid.Children.Add(_Map.MapGrid);
         }
 
 
-        void MapClick(object sender, RoutedEventArgs e)
-        {
-            GridButton button = sender as GridButton;
-            if (button != null)
-            {
-                if (_ClickFrom == null) _ClickFrom = button;
-                else
-                {
-                    _Map.EditTile(_ClickFrom, MapTileType.Empty);
-                    _Map.EditTile(button, MapTileType.Player);
-                    _ClickFrom = null;
-                }
-            }
 
-        }
 
     }
 }
