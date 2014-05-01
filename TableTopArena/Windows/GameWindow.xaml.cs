@@ -31,7 +31,7 @@ namespace TableTopArena.Windows
         
             _Map = new Map(mapWidth, mapHeight);
 
-            MapDataGrid.Children.Add(_Map.MapGrid);
+            MapDataGrid.Children.Add(_Map);
         }
 
 

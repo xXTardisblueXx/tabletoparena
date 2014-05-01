@@ -1,40 +1,59 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace TableTopArena.Sources.MapClasses
 {
-    public class MapTile
+    public class MapTile : Button
     {
-        public MapTile(int row, int column)
+        public MapTile(int x, int y)
         {
-            Position = new MapPoint(row, column);
+            SetPosition(new MapPoint(x, y)); 
         }
-        public MapTile(MapPoint position)
+
+        public MapTile(MapPoint point)
         {
-            Position = position;
+            SetPosition(point);
         }
-        public MapPoint Position { get; set; }
+
+        public MapPoint Position
+        {
+            get
+            {
+                return new MapPoint(Grid.GetColumn(this), Grid.GetRow(this));
+            }
+        }
+
         public MapTileType TileType { get; set; }
 
+        public void SetPosition(MapPoint point)
+        {
+            Grid.SetColumn(this, point.X);
+            Grid.SetRow(this, point.Y);
+        }
 
         public override string ToString()
         {
             return JsonConvert.SerializeObject(this);
         }
-
-
     }
 
     public class MapPoint
     {
-        public MapPoint(int row, int column)
+        public MapPoint(int x, int y)
         {
-            Row = row;
-            Column = column;
+            X = x;
+            Y = y;
         }
-        public int Row { get; set; }
-        public int Column { get; set; }
+
+        public int X { get; set; }
+        public int Y { get; set; }
+
+        public override int GetHashCode()
+        {
+            return X ^ Y;
+        }
 
         public override bool Equals(object obj)
         {
@@ -46,14 +65,13 @@ namespace TableTopArena.Sources.MapClasses
             return Equals(p);
         }
 
-        public bool Equals(MapPoint position)
+        public bool Equals(MapPoint point)
         {
-            if ((object)position == null) return false;
+            if ((object)point == null) return false;
 
-            else return (Row == position.Row) && (Column == position.Column);
+            else return (X == point.X) && (Y == point.Y);
         }
     }
-
 
     public enum MapTileType
     {
@@ -101,15 +119,5 @@ namespace TableTopArena.Sources.MapClasses
                     return MapTileType.Player;
             }
         }
-    }
-
-
-    public class GridButton : Button
-    {
-        public GridButton(MapPoint position)
-        {
-            Position = position;
-        }
-        public MapPoint Position { get; private set; }
     }
 }

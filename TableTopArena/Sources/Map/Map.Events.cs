@@ -4,11 +4,11 @@ using TableTopArena.Sources.MapClasses;
 
 namespace TableTopArena.Sources
 {
-    public partial class Map : Control
+    public partial class Map
     {
 
         public event EventHandler<MapClickEventArgs> Click;
-        void RaiseClickEvent(GridButton button)
+        void RaiseClickEvent(MapTile button)
         {
             if (Click != null)
                 Click(this, new MapClickEventArgs(button));
@@ -17,10 +17,10 @@ namespace TableTopArena.Sources
 
     public class MapClickEventArgs : EventArgs
     {
-        internal MapClickEventArgs(GridButton button)
+        internal MapClickEventArgs(MapTile button)
         {
             ClickedButton = button;
         }
-        public GridButton ClickedButton { get; set; }
+        public MapTile ClickedButton { get; set; }
     }
 }
