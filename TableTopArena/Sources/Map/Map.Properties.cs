@@ -11,16 +11,12 @@ namespace TableTopArena.Sources
 {
     public partial class Map
     {
-        #region Properties
-
         public int Rows { get; private set; }
         public int Columns { get; private set; }        
 
         public List<MapTile> Tiles { get; set; }
 
         private MapTile _ClickFrom { get; set; }
-
-        #endregion
 
     }
 }

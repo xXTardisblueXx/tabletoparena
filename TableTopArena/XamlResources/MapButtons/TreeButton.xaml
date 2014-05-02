@@ -1,0 +1,922 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                    
+                    xmlns:tabletop="clr-namespace:TableTopArena.Sources.MapClasses"
+                    >
+
+
+    <ControlTemplate x:Key="TreeButtonControlTemplate" TargetType="tabletop:MapTile" >
+        <Grid Width="{TemplateBinding Width}"  
+     Height="{TemplateBinding Height}" ClipToBounds="True">
+
+            <Viewbox Stretch="Uniform">
+                <Canvas Name="TreeCanvas" Width="480" Height="480">
+                    <Canvas.Resources>
+                        <LinearGradientBrush x:Key="GreenTreeGradient" MappingMode="Absolute" StartPoint="288,44" EndPoint="312,234">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStopCollection>
+                                    <GradientStop Color="#FF9ADE00" Offset="0"/>
+                                    <GradientStop Color="#FF009100" Offset="1"/>
+                                </GradientStopCollection>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                        <LinearGradientBrush  x:Key="BrownTreeGradient" MappingMode="Absolute" StartPoint="290,451" EndPoint="294,314">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStopCollection>
+                                    <GradientStop Color="#FF804D00" Offset="0"/>
+                                    <GradientStop Color="#FFB88100" Offset="1"/>
+                                </GradientStopCollection>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                        <BlurEffect  x:Key="TreeBlurEffect" Radius="2"/>
+                    </Canvas.Resources>
+                    <!--Unknown tag: sodipodi:namedview-->
+                    <!--Unknown tag: metadata-->
+
+                    <Canvas Name="g6835">
+                        <Canvas.RenderTransform>
+                            <MatrixTransform Matrix="1.133838 0 0 1.1210886 -101.59197 -41.769702"/>
+                        </Canvas.RenderTransform>
+                        <Path  Name="path6331" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 180.21766 264.42752 c -23.02816 -16.98686 -32.85004 -4.13561 -45.50968 2.04838 11.86273 4.78936 28.49506 15.97602 45.50968 -2.04838 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6333" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 183.34921 256.18821 c 3.75243 -27.71081 -12.70825 -29.4817 -24.59577 -36.95438 1.62706 12.29433 -0.1105 31.7676 24.59577 36.95438 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6335" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 190.56795 277.07796 c -28.74841 3.6794 -26.26322 19.45904 -30.6771 32.4578 11.90268 -4.69644 31.87235 -8.1192 30.6771 -32.4578 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6337" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 219.16159 218.4153 c 3.0873 -22.79883 -10.45559 -24.2558 -20.23592 -30.40385 1.33867 10.11499 -0.0909 26.13643 20.23592 30.40385 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6339" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 226.54209 217.17596 c 22.03355 -8.823 16.57148 -20.8532 17.20675 -32.08916 -8.4213 6.17467 -23.53495 12.99245 -17.20675 32.08916 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6341" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 214.06552 230.72571 c -14.5469 -18.2248 -25.19225 -10.02719 -36.61955 -7.71041 8.36905 6.24028 19.11486 18.5432 36.61955 7.71041 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6343" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 274.73477 227.34051 c 3.0873 -22.79883 -10.45559 -24.2558 -20.23592 -30.40385 1.33867 10.11498 -0.0909 26.13642 20.23592 30.40385 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6345" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 282.11527 226.10116 c 22.03355 -8.823 16.57148 -20.8532 17.20675 -32.08915 -8.4213 6.17466 -23.53495 12.99244 -17.20675 32.08915 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6347" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 269.6387 239.65092 c -14.54689 -18.22481 -25.19225 -10.02719 -36.61955 -7.71042 8.36905 6.24028 19.11487 18.54321 36.61955 7.71042 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6349" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 338.00175 233.85776 c 14.50351 -18.25688 3.531 -26.04373 -1.74892 -36.08033 -4.08913 9.4048 -13.64037 22.591 1.74892 36.08033 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6351" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 345.03651 236.34044 c 23.65969 2.975 25.17161 -10.07512 31.55187 -19.49966 -10.49696 1.28997 -27.12337 -0.0876 -31.55187 19.49966 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6353" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 327.20081 242.06356 c -3.14152 -22.79195 -16.61423 -20.82163 -27.71269 -24.32101 4.00986 9.43651 6.93229 25.26858 27.71269 24.32101 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6355" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 403.08108 261.70017 c 23.65964 2.97498 25.17163 -10.07517 31.55181 -19.49966 -10.49689 1.28996 -27.12327 -0.0876 -31.55181 19.49966 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6357" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 404.36721 268.81214 c 9.15615 21.23189 21.64057 15.96856 33.30076 16.58071 -6.40781 -8.11489 -13.48301 -22.67866 -33.30076 -16.58071 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6359" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 390.30586 256.78951 c 18.91293 -14.01762 10.40579 -24.27565 8.00154 -35.2872 -6.47589 8.06456 -19.24335 18.41941 -8.00154 35.2872 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6361" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 378.38189 211.12401 c 23.65964 2.97497 25.17163 -10.07518 31.55181 -19.49966 -10.49689 1.28995 -27.12326 -0.0876 -31.55181 19.49966 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6363" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 379.66802 218.23598 c 9.15615 21.23188 21.64057 15.96856 33.30076 16.5807 -6.40781 -8.11489 -13.48301 -22.67866 -33.30076 -16.5807 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6365" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 365.60667 206.21335 c 18.91293 -14.01763 10.40579 -24.27566 8.00154 -35.28721 -6.47589 8.06456 -19.24335 18.41941 -8.00154 35.28721 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6367" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 307.43664 191.62361 c 22.03351 -8.82301 16.57147 -20.85326 17.2067 -32.08913 -8.42123 6.17463 -23.53488 12.99235 -17.2067 32.08913 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6369" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 312.24071 197.16309 c 18.94624 13.97584 27.02702 3.40257 37.44268 -1.68526 -9.75997 -3.94038 -23.4441 -13.14409 -37.44268 1.68526 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6371" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 293.82494 193.52606 c 9.10564 -21.25203 -3.58444 -26.03692 -11.38024 -34.41482 -1.42377 10.10424 -7.10779 25.22328 11.38024 34.41482 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6373" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 250.83433 183.69009 c 22.0335 -8.823 16.57147 -20.85325 17.2067 -32.08912 -8.42123 6.17462 -23.53488 12.99235 -17.2067 32.08912 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6375" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 255.6384 189.22957 c 18.94623 13.97584 27.02702 3.40258 37.44268 -1.68526 -9.75997 -3.94037 -23.4441 -13.14408 -37.44268 1.68526 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6377" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 237.22262 185.59255 c 9.10564 -21.25203 -3.58444 -26.03693 -11.38023 -34.41483 -1.42377 10.10425 -7.10779 25.22328 11.38023 34.41483 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6379" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 331.50289 159.06997 c 23.65963 2.97497 25.17162 -10.07519 31.55179 -19.49968 -10.49687 1.28996 -27.12325 -0.0876 -31.55179 19.49968 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6381" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 332.78901 166.18193 c 9.15616 21.23189 21.64057 15.96856 33.30076 16.58073 -6.40781 -8.11491 -13.48301 -22.67869 -33.30076 -16.58073 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6383" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 318.72766 154.1593 c 18.91294 -14.01762 10.40579 -24.27565 8.00154 -35.2872 -6.47589 8.06455 -19.24335 18.41941 -8.00154 35.2872 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6385" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 272.89377 147.49135 c 18.91293 -14.01757 10.4058 -24.27566 8.00152 -35.2871 -6.47583 8.06449 -19.24332 18.41929 -8.00152 35.2871 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6387" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 279.02199 151.64393 c 22.05444 8.77439 27.02 -3.45396 35.71422 -10.96612 -10.48577 -1.37196 -26.17567 -6.8492 -35.71422 10.96612 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6389" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 260.25684 152.72377 c 3.08726 -22.79885 -10.45559 -24.25577 -20.23598 -30.40391 1.33866 10.11504 -0.0909 26.13652 20.23598 30.40391 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6391" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 219.01539 145.58433 c 2.86559 -21.16148 -9.70471 -22.51382 -18.78264 -28.22033 1.24253 9.38854 -0.0844 24.2594 18.78264 28.22033 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6393" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 225.86585 144.434 c 20.45117 -8.18938 15.38137 -19.35559 15.97103 -29.78462 -7.8165 5.73122 -21.84476 12.05937 -15.97103 29.78462 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6395" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 214.2853 157.01066 c -13.50216 -16.91597 -23.38301 -9.30707 -33.98965 -7.15669 7.76801 5.79213 17.74209 17.21149 33.98965 7.15669 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6397" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 180.93747 194.17711 c 2.86559 -21.16147 -9.70472 -22.51382 -18.78265 -28.22032 1.24254 9.38853 -0.0844 24.25939 18.78265 28.22032 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6399" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 187.78792 193.02679 c 20.45118 -8.18938 15.38138 -19.3556 15.97104 -29.78463 -7.81651 5.73123 -21.84476 12.05938 -15.97104 29.78463 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6401" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 176.20738 205.60345 c -13.50217 -16.91597 -23.38301 -9.30707 -33.98965 -7.15669 7.76801 5.79213 17.74209 17.21149 33.98965 7.15669 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6403" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 131.70697 262.46901 c -8.49856 -19.70704 -20.08647 -14.82173 -30.90916 -15.38988 5.94757 7.53204 12.51459 21.04991 30.90916 15.38988 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6405" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 137.04276 258.17219 c 13.46194 -16.94576 3.27746 -24.17331 -1.62328 -33.48923 -3.79549 8.72946 -12.66077 20.96872 1.62328 33.48923 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6407" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 133.53947 274.6435 c -20.47055 -8.14421 -25.07952 3.20597 -33.14935 10.17862 9.73271 1.27344 24.29578 6.3573 33.14935 -10.17862 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6409" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 156.49077 305.7316 c -20.47053 -8.14424 -25.07955 3.20596 -33.14926 10.17859 9.73262 1.2734 24.29569 6.35734 33.14926 -10.17859 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6411" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 157.11071 299.05759 c -2.91586 -21.15516 -15.42099 -19.32631 -25.7224 -22.57438 3.7219 8.75881 6.43444 23.4539 25.7224 22.57438 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6413" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 166.72025 313.09162 c -20.45114 8.18941 -15.38135 19.35565 -15.97102 29.78468 7.81653 -5.73121 21.84473 -12.05936 15.97102 -29.78468 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6415" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 141.4564 194.27307 c -2.67351 -19.39706 -14.1395 -17.72025 -23.58476 -20.69832 3.41258 8.03086 5.89965 21.50474 23.58476 20.69832 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6417" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 147.24026 191.68775 c 16.09587 -11.92967 8.85585 -20.65973 6.80974 -30.03112 -5.5113 6.86335 -16.37704 15.67584 -6.80974 30.03112 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6419" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 140.08116 205.4745 c -16.12416 -11.89408 -23.00133 -2.8957 -31.86556 1.43426 8.30619 3.35347 19.95203 11.18625 31.86556 -1.43426 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6421" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 153.00617 157.78374 c 7.74938 -18.08645 -3.05051 -22.1587 -9.68509 -29.2886 -1.21166 8.59914 -6.04911 21.46615 9.68509 29.2886 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6423" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 159.3566 158.33151 c 20.12949 -2.57628 18.38929 -13.62503 21.47992 -22.72673 -8.33418 3.28845 -22.3168 5.68508 -21.47992 22.72673 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6425" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 146.00299 166.82187 c -7.79235 -18.06933 -18.41722 -13.58999 -28.34059 -14.11099 5.45332 6.90619 11.47466 19.30064 28.34059 14.11099 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6427" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 201.67481 113.4988 c 2.62746 -19.402894 -8.89821 -20.64286 -17.22175 -25.875138 1.13929 8.608317 -0.0773 22.243368 17.22175 25.875138 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6429" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 207.95598 112.44408 c 18.75162 -7.50883 14.10312 -17.747094 14.6438 -27.309468 -7.16695 5.254966 -20.0294 11.057224 -14.6438 27.309468 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6431" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 197.33781 123.97557 c -12.38009 -15.51021 -21.43982 -8.53363 -31.16499 -6.56196 7.12244 5.31079 16.26765 15.78117 31.16499 6.56196 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6433" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 282.9536 110.64833 c 16.09584 -11.929614 8.85586 -20.659761 6.8097 -30.031031 -5.51124 6.863284 -16.37699 15.675741 -6.8097 30.031031 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6435" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 288.16902 114.1824 c 18.76942 7.46743 22.99532 -2.93951 30.39456 -9.33272 -8.92392 -1.1676 -22.27678 -5.829 -30.39456 9.33272 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6437" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 272.19898 115.10139 c 2.62742 -19.402922 -8.89822 -20.642845 -17.22179 -25.875207 1.13924 8.608387 -0.0773 22.243427 17.22179 25.875207 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6439" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 343.18537 116.5932 c 20.12942 -2.57624 18.3893 -13.62506 21.47983 -22.726668 -8.33409 3.288416 -22.31669 5.685021 -21.47983 22.726668 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6441" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 345.86829 122.16663 c 12.38012 15.51023 21.43979 8.53364 31.16502 6.56197 -7.1225 -5.31079 -16.26771 -15.7812 -31.16502 -6.56197 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6443" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 331.561 115.26799 c 12.34316 -15.537509 3.00504 -22.164459 -1.48842 -30.70618 -3.4801 8.003977 -11.60861 19.22611 1.48842 30.70618 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6445" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 386.23932 167.30014 c 20.12942 -2.57625 18.38929 -13.62506 21.47983 -22.72667 -8.33409 3.28842 -22.3167 5.68502 -21.47983 22.72667 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6447" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 388.92224 172.87356 c 12.38011 15.51024 21.43979 8.53365 31.16501 6.56198 -7.12249 -5.31079 -16.2677 -15.7812 -31.16501 -6.56198 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6449" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 374.61494 165.97493 c 12.34317 -15.53751 3.00505 -22.16446 -1.48841 -30.70618 -3.4801 8.00397 -11.60861 19.22611 1.48841 30.70618 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6451" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 428.25401 178.91888 c 16.1241 11.89409 23.00134 2.89573 31.86549 -1.43426 -8.30615 -3.35342 -19.952 -11.18623 -31.86549 1.43426 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6453" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 426.06132 184.68797 c -2.62744 19.40295 8.89819 20.64283 17.22178 25.87523 -1.13929 -8.60842 0.0773 -22.24347 -17.22178 -25.87523 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6455" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 421.00678 170.0612 c 20.12944 -2.5763 18.38929 -13.62506 21.47989 -22.72673 -8.33416 3.2884 -22.31675 5.68505 -21.47989 22.72673 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6457" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 444.32458 238.10269 c 20.13547 2.53186 21.42228 -8.57446 26.85212 -16.59516 -8.93337 1.09783 -23.08324 -0.0745 -26.85212 16.59516 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6459" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 445.41911 244.15532 c 7.79235 18.06938 18.41718 13.59 28.3406 14.11101 -5.45338 -6.90618 -11.47469 -19.30067 -28.3406 -14.11101 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6461" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 433.45223 233.92348 c 16.09583 -11.92966 8.85584 -20.65976 6.80972 -30.0311 -5.5113 6.8633 -16.37703 15.67579 -6.80972 30.0311 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6463" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 464.39632 175.05076 c 16.12408 11.8941 23.00132 2.89574 31.86548 -1.43426 -8.30616 -3.35342 -19.952 -11.18623 -31.86548 1.43426 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6465" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 462.20362 180.81985 c -2.62744 19.40296 8.89817 20.64283 17.22178 25.87523 -1.1393 -8.60842 0.0773 -22.24347 -17.22178 -25.87523 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6467" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 457.14908 166.19307 c 20.12943 -2.57628 18.38929 -13.62505 21.47988 -22.72671 -8.33415 3.2884 -22.31675 5.68504 -21.47988 22.72671 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6469" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 438.15247 138.88799 c 16.09581 -11.92958 8.85583 -20.65974 6.80969 -30.03103 -5.51127 6.86331 -16.377 15.67575 -6.80969 30.03103 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6471" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 443.36785 142.42207 c 18.76944 7.46743 22.99533 -2.9395 30.39457 -9.33271 -8.92392 -1.1676 -22.27675 -5.82902 -30.39457 9.33271 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6473" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 427.39782 143.34107 c 2.62742 -19.40292 -8.89821 -20.64285 -17.22178 -25.8752 1.13925 8.60837 -0.0773 22.24343 17.22178 25.8752 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6475" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 399.88229 109.69309 c 16.09581 -11.929585 8.85584 -20.659747 6.80969 -30.031032 -5.51126 6.863304 -16.37699 15.675753 -6.80969 30.031032 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6477" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 405.09768 113.22717 c 18.76943 7.46743 22.99533 -2.9395 30.39456 -9.33272 -8.92392 -1.16759 -22.27675 -5.829018 -30.39456 9.33272 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6479" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 389.12765 114.14616 c 2.62742 -19.402913 -8.89822 -20.642844 -17.22179 -25.875192 1.13926 8.608367 -0.0773 22.243432 17.22179 25.875192 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6481" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 336.09867 80.498187 c 16.09581 -11.929586 8.85583 -20.659747 6.80969 -30.031033 -5.51127 6.863305 -16.377 15.675754 -6.80969 30.031033 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6483" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 341.31405 84.032262 c 18.76944 7.46743 22.99533 -2.939497 30.39457 -9.332711 -8.92392 -1.167596 -22.27675 -5.829022 -30.39457 9.332711 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6485" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 325.34402 84.95126 c 2.62743 -19.402916 -8.89821 -20.642847 -17.22178 -25.875195 1.13925 8.608367 -0.0773 22.243431 17.22178 25.875195 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6487" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 254.91885 80.646998 c 7.74937 -18.08642 -3.05053 -22.158682 -9.6851 -29.288602 -1.21167 8.599168 -6.04908 21.466172 9.6851 29.288602 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6489" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 261.26926 81.194781 c 20.1295 -2.576284 18.3893 -13.625019 21.47991 -22.726717 -8.33417 3.288449 -22.31678 5.685039 -21.47991 22.726717 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6491" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 247.91565 89.68515 c -7.79234 -18.069334 -18.41721 -13.589996 -28.34058 -14.110979 5.45331 6.906163 11.47466 19.300638 28.34058 14.110979 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6493" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 440.84351 285.98795 c 7.79226 18.06929 18.4172 13.59 28.34053 14.11093 -5.45334 -6.90612 -11.47464 -19.30059 -28.34053 -14.11093 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6495" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 435.95112 289.92766 c -12.34321 15.53753 -3.00509 22.16442 1.48838 30.70619 3.48009 -8.00402 11.60864 -19.22614 -1.48838 -30.70619 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path6497" Fill="#FF0E232E" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Effect="{StaticResource TreeBlurEffect}">
+                            <Path.Data>
+                                <PathGeometry Figures="m 439.16328 274.82517 c 18.76938 7.46742 22.99535 -2.93952 30.39451 -9.33272 -8.92384 -1.16762 -22.27671 -5.829 -30.39451 9.33272 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3873" Fill="#FF804D00" StrokeThickness="1" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 257.65519 456.17557 c 52.9807 10.81667 39.82244 -3.90277 92.8598 2.2866 l -5.1933 -4.5732 c 0 0 -8.2832 -59.43924 -3.08989 -108.2201 5.1933 -48.78086 57.1263 -73.93349 57.1263 -73.93349 0 0 -39.3207 19.81722 -53.4168 38.87224 -14.0961 19.05503 -17.8056 6.09762 -17.8056 6.09762 0 0 -16.3218 -7.62201 -2.2257 -41.92105 14.0961 -34.29905 11.12849 -38.87226 11.12849 -38.87226 0 0 -1.48379 7.62202 -8.16089 20.57943 -6.67711 12.95742 -17.8056 55.64067 -17.8056 55.64067 -4.06233 -33.36232 -19.73746 -55.22515 -31.90171 -84.60431 l 17.8056 71.64689 c -14.99689 -24.60132 -24.57323 -50.71429 -80.8671 -54.11627 42.39454 6.57957 65.50558 15.50194 73.4481 67.07369 -36.90422 -5.10095 -43.21057 -75.35897 -99.41461 -48.78086 87.44556 -35.06836 105.88071 201.46289 67.51291 192.8244 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3877" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 180.21766 264.42752 c -23.02816 -16.98686 -32.85004 -4.13561 -45.50968 2.04838 11.86273 4.78936 28.49506 15.97602 45.50968 -2.04838 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3879" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 183.34921 256.18821 c 3.75243 -27.71081 -12.70825 -29.4817 -24.59577 -36.95438 1.62706 12.29433 -0.1105 31.7676 24.59577 36.95438 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3881" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 190.56795 277.07796 c -28.74841 3.6794 -26.26322 19.45904 -30.6771 32.4578 11.90268 -4.69644 31.87235 -8.1192 30.6771 -32.4578 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3883" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 219.16159 218.4153 c 3.0873 -22.79883 -10.45559 -24.2558 -20.23592 -30.40385 1.33867 10.11499 -0.0909 26.13643 20.23592 30.40385 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3885" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 226.54209 217.17596 c 22.03355 -8.823 16.57148 -20.8532 17.20675 -32.08916 -8.4213 6.17467 -23.53495 12.99245 -17.20675 32.08916 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3887" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 214.06552 230.72571 c -14.5469 -18.2248 -25.19225 -10.02719 -36.61955 -7.71041 8.36905 6.24028 19.11486 18.5432 36.61955 7.71041 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3889" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 274.73477 227.34051 c 3.0873 -22.79883 -10.45559 -24.2558 -20.23592 -30.40385 1.33867 10.11498 -0.0909 26.13642 20.23592 30.40385 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3891" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 282.11527 226.10116 c 22.03355 -8.823 16.57148 -20.8532 17.20675 -32.08915 -8.4213 6.17466 -23.53495 12.99244 -17.20675 32.08915 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3893" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 269.6387 239.65092 c -14.54689 -18.22481 -25.19225 -10.02719 -36.61955 -7.71042 8.36905 6.24028 19.11487 18.54321 36.61955 7.71042 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3895" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 338.00175 233.85776 c 14.50351 -18.25688 3.531 -26.04373 -1.74892 -36.08033 -4.08913 9.4048 -13.64037 22.591 1.74892 36.08033 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3897" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 345.03651 236.34044 c 23.65969 2.975 25.17161 -10.07512 31.55187 -19.49966 -10.49696 1.28997 -27.12337 -0.0876 -31.55187 19.49966 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3899" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 327.20081 242.06356 c -3.14152 -22.79195 -16.61423 -20.82163 -27.71269 -24.32101 4.00986 9.43651 6.93229 25.26858 27.71269 24.32101 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3901" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 403.08108 261.70017 c 23.65964 2.97498 25.17163 -10.07517 31.55181 -19.49966 -10.49689 1.28996 -27.12327 -0.0876 -31.55181 19.49966 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3903" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 404.36721 268.81214 c 9.15615 21.23189 21.64057 15.96856 33.30076 16.58071 -6.40781 -8.11489 -13.48301 -22.67866 -33.30076 -16.58071 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3905" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 390.30586 256.78951 c 18.91293 -14.01762 10.40579 -24.27565 8.00154 -35.2872 -6.47589 8.06456 -19.24335 18.41941 -8.00154 35.2872 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3907" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 378.38189 211.12401 c 23.65964 2.97497 25.17163 -10.07518 31.55181 -19.49966 -10.49689 1.28995 -27.12326 -0.0876 -31.55181 19.49966 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3909" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 379.66802 218.23598 c 9.15615 21.23188 21.64057 15.96856 33.30076 16.5807 -6.40781 -8.11489 -13.48301 -22.67866 -33.30076 -16.5807 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3911" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 365.60667 206.21335 c 18.91293 -14.01763 10.40579 -24.27566 8.00154 -35.28721 -6.47589 8.06456 -19.24335 18.41941 -8.00154 35.28721 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3913" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 307.43664 191.62361 c 22.03351 -8.82301 16.57147 -20.85326 17.2067 -32.08913 -8.42123 6.17463 -23.53488 12.99235 -17.2067 32.08913 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3915" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 312.24071 197.16309 c 18.94624 13.97584 27.02702 3.40257 37.44268 -1.68526 -9.75997 -3.94038 -23.4441 -13.14409 -37.44268 1.68526 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3917" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 293.82494 193.52606 c 9.10564 -21.25203 -3.58444 -26.03692 -11.38024 -34.41482 -1.42377 10.10424 -7.10779 25.22328 11.38024 34.41482 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3919" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 250.83433 183.69009 c 22.0335 -8.823 16.57147 -20.85325 17.2067 -32.08912 -8.42123 6.17462 -23.53488 12.99235 -17.2067 32.08912 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3921" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 255.6384 189.22957 c 18.94623 13.97584 27.02702 3.40258 37.44268 -1.68526 -9.75997 -3.94037 -23.4441 -13.14408 -37.44268 1.68526 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3923" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 237.22262 185.59255 c 9.10564 -21.25203 -3.58444 -26.03693 -11.38023 -34.41483 -1.42377 10.10425 -7.10779 25.22328 11.38023 34.41483 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3925" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 331.50289 159.06997 c 23.65963 2.97497 25.17162 -10.07519 31.55179 -19.49968 -10.49687 1.28996 -27.12325 -0.0876 -31.55179 19.49968 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3927" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 332.78901 166.18193 c 9.15616 21.23189 21.64057 15.96856 33.30076 16.58073 -6.40781 -8.11491 -13.48301 -22.67869 -33.30076 -16.58073 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3929" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 318.72766 154.1593 c 18.91294 -14.01762 10.40579 -24.27565 8.00154 -35.2872 -6.47589 8.06455 -19.24335 18.41941 -8.00154 35.2872 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3931" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 272.89377 147.49135 c 18.91293 -14.01757 10.4058 -24.27566 8.00152 -35.2871 -6.47583 8.06449 -19.24332 18.41929 -8.00152 35.2871 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3933" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 279.02199 151.64393 c 22.05444 8.77439 27.02 -3.45396 35.71422 -10.96612 -10.48577 -1.37196 -26.17567 -6.8492 -35.71422 10.96612 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3935" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 260.25684 152.72377 c 3.08726 -22.79885 -10.45559 -24.25577 -20.23598 -30.40391 1.33866 10.11504 -0.0909 26.13652 20.23598 30.40391 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3937" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 219.01539 145.58433 c 2.86559 -21.16148 -9.70471 -22.51382 -18.78264 -28.22033 1.24253 9.38854 -0.0844 24.2594 18.78264 28.22033 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3939" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 225.86585 144.434 c 20.45117 -8.18938 15.38137 -19.35559 15.97103 -29.78462 -7.8165 5.73122 -21.84476 12.05937 -15.97103 29.78462 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3941" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 214.2853 157.01066 c -13.50216 -16.91597 -23.38301 -9.30707 -33.98965 -7.15669 7.76801 5.79213 17.74209 17.21149 33.98965 7.15669 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3943" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 180.93747 194.17711 c 2.86559 -21.16147 -9.70472 -22.51382 -18.78265 -28.22032 1.24254 9.38853 -0.0844 24.25939 18.78265 28.22032 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3945" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 187.78792 193.02679 c 20.45118 -8.18938 15.38138 -19.3556 15.97104 -29.78463 -7.81651 5.73123 -21.84476 12.05938 -15.97104 29.78463 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3947" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 176.20738 205.60345 c -13.50217 -16.91597 -23.38301 -9.30707 -33.98965 -7.15669 7.76801 5.79213 17.74209 17.21149 33.98965 7.15669 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3949" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 131.70697 262.46901 c -8.49856 -19.70704 -20.08647 -14.82173 -30.90916 -15.38988 5.94757 7.53204 12.51459 21.04991 30.90916 15.38988 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3951" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 137.04276 258.17219 c 13.46194 -16.94576 3.27746 -24.17331 -1.62328 -33.48923 -3.79549 8.72946 -12.66077 20.96872 1.62328 33.48923 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3953" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 133.53947 274.6435 c -20.47055 -8.14421 -25.07952 3.20597 -33.14935 10.17862 9.73271 1.27344 24.29578 6.3573 33.14935 -10.17862 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3955" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 156.49077 305.7316 c -20.47053 -8.14424 -25.07955 3.20596 -33.14926 10.17859 9.73262 1.2734 24.29569 6.35734 33.14926 -10.17859 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3957" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 157.11071 299.05759 c -2.91586 -21.15516 -15.42099 -19.32631 -25.7224 -22.57438 3.7219 8.75881 6.43444 23.4539 25.7224 22.57438 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3959" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 166.72025 313.09162 c -20.45114 8.18941 -15.38135 19.35565 -15.97102 29.78468 7.81653 -5.73121 21.84473 -12.05936 15.97102 -29.78468 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3961" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 141.4564 194.27307 c -2.67351 -19.39706 -14.1395 -17.72025 -23.58476 -20.69832 3.41258 8.03086 5.89965 21.50474 23.58476 20.69832 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3963" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 147.24026 191.68775 c 16.09587 -11.92967 8.85585 -20.65973 6.80974 -30.03112 -5.5113 6.86335 -16.37704 15.67584 -6.80974 30.03112 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3965" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 140.08116 205.4745 c -16.12416 -11.89408 -23.00133 -2.8957 -31.86556 1.43426 8.30619 3.35347 19.95203 11.18625 31.86556 -1.43426 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3967" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 153.00617 157.78374 c 7.74938 -18.08645 -3.05051 -22.1587 -9.68509 -29.2886 -1.21166 8.59914 -6.04911 21.46615 9.68509 29.2886 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3969" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 159.3566 158.33151 c 20.12949 -2.57628 18.38929 -13.62503 21.47992 -22.72673 -8.33418 3.28845 -22.3168 5.68508 -21.47992 22.72673 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3971" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 146.00299 166.82187 c -7.79235 -18.06933 -18.41722 -13.58999 -28.34059 -14.11099 5.45332 6.90619 11.47466 19.30064 28.34059 14.11099 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3973" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 201.67481 113.4988 c 2.62746 -19.402894 -8.89821 -20.64286 -17.22175 -25.875138 1.13929 8.608317 -0.0773 22.243368 17.22175 25.875138 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3975" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 207.95598 112.44408 c 18.75162 -7.50883 14.10312 -17.747094 14.6438 -27.309468 -7.16695 5.254966 -20.0294 11.057224 -14.6438 27.309468 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3977" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 197.33781 123.97557 c -12.38009 -15.51021 -21.43982 -8.53363 -31.16499 -6.56196 7.12244 5.31079 16.26765 15.78117 31.16499 6.56196 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3979" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 282.9536 110.64833 c 16.09584 -11.929614 8.85586 -20.659761 6.8097 -30.031031 -5.51124 6.863284 -16.37699 15.675741 -6.8097 30.031031 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3981" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 288.16902 114.1824 c 18.76942 7.46743 22.99532 -2.93951 30.39456 -9.33272 -8.92392 -1.1676 -22.27678 -5.829 -30.39456 9.33272 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3983" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 272.19898 115.10139 c 2.62742 -19.402922 -8.89822 -20.642845 -17.22179 -25.875207 1.13924 8.608387 -0.0773 22.243427 17.22179 25.875207 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3985" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 343.18537 116.5932 c 20.12942 -2.57624 18.3893 -13.62506 21.47983 -22.726668 -8.33409 3.288416 -22.31669 5.685021 -21.47983 22.726668 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3987" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 345.86829 122.16663 c 12.38012 15.51023 21.43979 8.53364 31.16502 6.56197 -7.1225 -5.31079 -16.26771 -15.7812 -31.16502 -6.56197 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3989" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 331.561 115.26799 c 12.34316 -15.537509 3.00504 -22.164459 -1.48842 -30.70618 -3.4801 8.003977 -11.60861 19.22611 1.48842 30.70618 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3991" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 386.23932 167.30014 c 20.12942 -2.57625 18.38929 -13.62506 21.47983 -22.72667 -8.33409 3.28842 -22.3167 5.68502 -21.47983 22.72667 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3993" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 388.92224 172.87356 c 12.38011 15.51024 21.43979 8.53365 31.16501 6.56198 -7.12249 -5.31079 -16.2677 -15.7812 -31.16501 -6.56198 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3995" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 374.61494 165.97493 c 12.34317 -15.53751 3.00505 -22.16446 -1.48841 -30.70618 -3.4801 8.00397 -11.60861 19.22611 1.48841 30.70618 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3997" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 428.25401 178.91888 c 16.1241 11.89409 23.00134 2.89573 31.86549 -1.43426 -8.30615 -3.35342 -19.952 -11.18623 -31.86549 1.43426 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path3999" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 426.06132 184.68797 c -2.62744 19.40295 8.89819 20.64283 17.22178 25.87523 -1.13929 -8.60842 0.0773 -22.24347 -17.22178 -25.87523 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4001" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 421.00678 170.0612 c 20.12944 -2.5763 18.38929 -13.62506 21.47989 -22.72673 -8.33416 3.2884 -22.31675 5.68505 -21.47989 22.72673 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4003" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 444.32458 238.10269 c 20.13547 2.53186 21.42228 -8.57446 26.85212 -16.59516 -8.93337 1.09783 -23.08324 -0.0745 -26.85212 16.59516 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4005" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 445.41911 244.15532 c 7.79235 18.06938 18.41718 13.59 28.3406 14.11101 -5.45338 -6.90618 -11.47469 -19.30067 -28.3406 -14.11101 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4007" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 433.45223 233.92348 c 16.09583 -11.92966 8.85584 -20.65976 6.80972 -30.0311 -5.5113 6.8633 -16.37703 15.67579 -6.80972 30.0311 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4009" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 464.39632 175.05076 c 16.12408 11.8941 23.00132 2.89574 31.86548 -1.43426 -8.30616 -3.35342 -19.952 -11.18623 -31.86548 1.43426 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4011" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 462.20362 180.81985 c -2.62744 19.40296 8.89817 20.64283 17.22178 25.87523 -1.1393 -8.60842 0.0773 -22.24347 -17.22178 -25.87523 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4013" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 457.14908 166.19307 c 20.12943 -2.57628 18.38929 -13.62505 21.47988 -22.72671 -8.33415 3.2884 -22.31675 5.68504 -21.47988 22.72671 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4015" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 438.15247 138.88799 c 16.09581 -11.92958 8.85583 -20.65974 6.80969 -30.03103 -5.51127 6.86331 -16.377 15.67575 -6.80969 30.03103 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4017" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 443.36785 142.42207 c 18.76944 7.46743 22.99533 -2.9395 30.39457 -9.33271 -8.92392 -1.1676 -22.27675 -5.82902 -30.39457 9.33271 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4019" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 427.39782 143.34107 c 2.62742 -19.40292 -8.89821 -20.64285 -17.22178 -25.8752 1.13925 8.60837 -0.0773 22.24343 17.22178 25.8752 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4021" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 399.88229 109.69309 c 16.09581 -11.929585 8.85584 -20.659747 6.80969 -30.031032 -5.51126 6.863304 -16.37699 15.675753 -6.80969 30.031032 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4023" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 405.09768 113.22717 c 18.76943 7.46743 22.99533 -2.9395 30.39456 -9.33272 -8.92392 -1.16759 -22.27675 -5.829018 -30.39456 9.33272 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4025" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 389.12765 114.14616 c 2.62742 -19.402913 -8.89822 -20.642844 -17.22179 -25.875192 1.13926 8.608367 -0.0773 22.243432 17.22179 25.875192 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4027" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 336.09867 80.498187 c 16.09581 -11.929586 8.85583 -20.659747 6.80969 -30.031033 -5.51127 6.863305 -16.377 15.675754 -6.80969 30.031033 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4029" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 341.31405 84.032262 c 18.76944 7.46743 22.99533 -2.939497 30.39457 -9.332711 -8.92392 -1.167596 -22.27675 -5.829022 -30.39457 9.332711 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4031" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 325.34402 84.95126 c 2.62743 -19.402916 -8.89821 -20.642847 -17.22178 -25.875195 1.13925 8.608367 -0.0773 22.243431 17.22178 25.875195 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4033" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 254.91885 80.646998 c 7.74937 -18.08642 -3.05053 -22.158682 -9.6851 -29.288602 -1.21167 8.599168 -6.04908 21.466172 9.6851 29.288602 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4035" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 261.26926 81.194781 c 20.1295 -2.576284 18.3893 -13.625019 21.47991 -22.726717 -8.33417 3.288449 -22.31678 5.685039 -21.47991 22.726717 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4037" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 247.91565 89.68515 c -7.79234 -18.069334 -18.41721 -13.589996 -28.34058 -14.110979 5.45331 6.906163 11.47466 19.300638 28.34058 14.110979 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4039" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 440.84351 285.98795 c 7.79226 18.06929 18.4172 13.59 28.34053 14.11093 -5.45334 -6.90612 -11.47464 -19.30059 -28.34053 -14.11093 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4041" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 435.95112 289.92766 c -12.34321 15.53753 -3.00509 22.16442 1.48838 30.70619 3.48009 -8.00402 11.60864 -19.22614 -1.48838 -30.70619 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4043" Fill="{StaticResource GreenTreeGradient}" StrokeThickness="0" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 439.16328 274.82517 c 18.76938 7.46742 22.99535 -2.93952 30.39451 -9.33272 -8.92384 -1.16762 -22.27671 -5.829 -30.39451 9.33272 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                        <Path  Name="path4045" Fill="{StaticResource BrownTreeGradient}" StrokeThickness="1" Stroke="#FF000000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+                            <Path.Data>
+                                <PathGeometry Figures="m 257.65519 456.17557 c 52.9807 10.81667 39.82244 -3.90277 92.8598 2.2866 l -5.1933 -4.5732 c 0 0 -8.2832 -59.43924 -3.08989 -108.2201 5.1933 -48.78086 57.1263 -73.93349 57.1263 -73.93349 0 0 -39.3207 19.81722 -53.4168 38.87224 -14.0961 19.05503 -17.8056 6.09762 -17.8056 6.09762 0 0 -16.3218 -7.62201 -2.2257 -41.92105 14.0961 -34.29905 11.12849 -38.87226 11.12849 -38.87226 0 0 -1.48379 7.62202 -8.16089 20.57943 -6.67711 12.95742 -17.8056 55.64067 -17.8056 55.64067 -4.06233 -33.36232 -19.73746 -55.22515 -31.90171 -84.60431 l 17.8056 71.64689 c -14.99689 -24.60132 -24.57323 -50.71429 -80.8671 -54.11627 42.39454 6.57957 65.50558 15.50194 73.4481 67.07369 -36.90422 -5.10095 -43.21057 -75.35897 -99.41461 -48.78086 87.44556 -35.06836 105.88071 201.46289 67.51291 192.8244 z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                </Canvas>
+            </Viewbox>
+
+            <!-- Present Text of the button. -->
+            <DockPanel Name="myContentPresenterDockPanel">
+                <ContentPresenter x:Name="myContentPresenter" Margin="10" 
+        Content="{TemplateBinding Content}" TextBlock.Foreground="Black" />
+            </DockPanel>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <!-- Set action triggers for the buttons and define 
+           what the button does in response to those triggers. -->
+            <!-- Set properties when mouse pointer is over the button. -->
+            <Trigger Property="IsMouseOver" Value="True">
+
+                <!-- Makes the text slightly blurry as though you  
+         were looking at it through blurry glass. -->
+                <Setter Property="ContentPresenter.BitmapEffect"  
+      TargetName="myContentPresenter">
+                    <Setter.Value>
+                        <BlurBitmapEffect Radius="1" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="IsFocused" Value="true">
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    
+    
+    
+    
+</ResourceDictionary>

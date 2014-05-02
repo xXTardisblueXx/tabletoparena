@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                    
+                    xmlns:tabletop="clr-namespace:TableTopArena.Sources.MapClasses"
+                    >
+
+
+    <ControlTemplate x:Key="EmptyButtonControlTemplate" TargetType="tabletop:MapTile" >
+        <Grid Width="{TemplateBinding Width}"  
+     Height="{TemplateBinding Height}" ClipToBounds="True" Background="ForestGreen"> 
+            <!-- Present Text of the button. -->
+            <DockPanel Name="myContentPresenterDockPanel">
+                <ContentPresenter x:Name="myContentPresenter" Margin="10" 
+        Content="{TemplateBinding Content}" TextBlock.Foreground="Black" />
+            </DockPanel>
+        </Grid>
+    </ControlTemplate>
+    
+    
+    
+    
+</ResourceDictionary>
